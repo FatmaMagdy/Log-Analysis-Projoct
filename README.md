@@ -8,10 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Installing
 
-> install Python3
-> install Git Bash
-> install VirtualBox
-> install Vagrant
+1. > install Python3
+2. > install Git Bash
+3. > install VirtualBox
+4. > install Vagrant
 
 # Running
 
@@ -25,4 +25,4 @@ Use commands
 and simply Clone or download the Repo and run the news_analysis.py
 [GitHub Repo](https://github.com/FatmaMagdy/Log-Analysis-Projoct.git)
 by running the command
-1.`python news_analysis.py`
+1. `python news_analysis.py`
