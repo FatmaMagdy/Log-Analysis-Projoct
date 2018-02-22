@@ -1,8 +1,8 @@
-import psycopg3
-
+import psycopg2
 
 def connect():
         return psycopg2.connect("dbname=news")
+
 '''query to implment the first question'''
 query1 = "select articles.title, count(*) as num from articles, log where log.path like concat ('%', articles.slug, '%') group by articles.title, log.path order by num desc limit 3"
 '''query to implment the second question'''
@@ -57,4 +57,3 @@ if __name__ == "__main__":
         print "On which days did more than 1% of requests lead to errors?\n"
         error(query3)
         print "\n"
-                                                                                                                                               1,15          Top
