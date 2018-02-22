@@ -8,19 +8,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Installing
 
-> install Python3
-> install Git Bash
-> install VirtualBox
-> install Vagrant
+-> install Python3
+-> install Git Bash
+-> install VirtualBox
+-> install Vagrant
 
 # Running
 
 To get this project running you will need to have a virtual machine up and running on your system.
 Use commands
-1.`vagrant up`.
-2.`vagrant ssh`.
-3.`cd /vagrant`.
-4.`psql -d news -f newsdata.sql` to load the database.
+-`vagrant up`.
+-`vagrant ssh`.
+-`cd /vagrant`.
+-`psql -d news -f newsdata.sql` to load the database.
 
 and simply Clone or download the Repo and run the news_analysis.py
 [GitHub Repo](https://github.com/FatmaMagdy/Log-Analysis-Projoct.git)
