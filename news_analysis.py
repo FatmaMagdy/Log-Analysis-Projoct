@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import psycopg2
 
 
@@ -10,7 +11,7 @@ query1 = (
           "select articles.title, count(*) as num "
           "from articles, log "
           "where log.path like concat ('%', articles.slug, '%') "
-          "group by articles.title, log.path "
+          "group by articles.title "
           "order by num desc "
           "limit 3")
 '''query to implment the second question'''
@@ -19,12 +20,13 @@ query2 = (
           "from articles, authors, log "
           "where articles.author = authors.id "
           "and log.path like concat ('%', articles.slug, '%') "
+          "and log.status = '200 OK' "
           "group by authors.name "
           "order by num desc ")
 '''query to implment the third question'''
 query3 = (
           "select * from "
-          "(select to_char(time,'YYYY-MM-DD') as day, "
+          "(select date(time) as day, "
           "round(100.0*sum "
           "(case when status!='200 OK' then 1 else 0 end)/count(*),2) "
           "as error_percent "
