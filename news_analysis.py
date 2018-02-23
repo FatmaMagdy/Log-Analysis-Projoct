@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 import psycopg2
 
 
@@ -11,6 +11,7 @@ query1 = (
           "select articles.title, count(*) as num "
           "from articles, log "
           "where log.path like concat ('%', articles.slug, '%') "
+          "and log.status = '200 OK' "
           "group by articles.title "
           "order by num desc "
           "limit 3")
