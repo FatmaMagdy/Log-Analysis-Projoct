@@ -8,10 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Installing
 
-1.  install Python3
-2.  install Git Bash
-3.  install VirtualBox
-4.  install Vagrant
+1. > install Python3
+2. > install Git Bash
+3. > install VirtualBox
+4. > install Vagrant
 
 # Running
 
