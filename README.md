@@ -8,15 +8,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Installing
 
-1. > install Python3
-2. > install Git Bash
-3. > install VirtualBox
-4. > install Vagrant
+1.  install Python3
+2.  install Git Bash
+3.  install VirtualBox
+4.  install Vagrant
 
 # Running
 
 To get this project running you will need to have a virtual machine up and running on your system.
-Use commands
+Use commands.
 1. `vagrant up`.
 2. `vagrant ssh`.
 3. `cd /vagrant`.
